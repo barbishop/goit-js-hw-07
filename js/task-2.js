@@ -39,4 +39,5 @@ function createMarkup(markup) {
     )
     .join('');
 }
+
 gallery.innerHTML = createMarkup(images);
