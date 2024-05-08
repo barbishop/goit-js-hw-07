@@ -12,3 +12,18 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/* TASK 2 */
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.gallery-image {
+  display: block;
+  width: 1280px;
+  height: 720px;
+}
