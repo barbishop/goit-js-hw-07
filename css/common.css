@@ -13,17 +13,199 @@ body {
   line-height: 1.5;
 }
 
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+::placeholder {
+  padding-left: 8px;
+}
+
+/* TASK 1 */
+.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  height: auto;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+.categories-list {
+  marker: none;
+}
+
+.categories-ul {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categories-item {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  border: 1px solid #000;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+}
+
 /* TASK 2 */
 
 .gallery {
   display: flex;
-  gap: 10px;
+  gap: 24px;
   flex-wrap: wrap;
   list-style: none;
+  width: 100%;
+  height: auto;
+  top: 100px;
+  left: 156px;
 }
 
 .gallery-image {
-  display: block;
-  width: 1280px;
-  height: 720px;
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* TASK 3 */
+input[type='text'] {
+  padding-left: 8px;
+  border: 1px solid #000;
+  width: 360px;
+  height: 40px;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* TASK 4 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 360px;
+  height: 40px;
+  padding: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px;
+  outline: none;
+  margin-bottom: 16px;
+}
+input[type='email']:hover,
+input[type='email']:focus {
+  border: 1px solid black;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  width: 86px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #4e75ff;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #6c8cff;
+}
+
+/* TASK 5 */
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change-color {
+  width: 148px;
+  height: 40px;
+  color: #fafafa;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  border: none;
+}
+
+/* TASK 6 */
+
+.setup {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  background: #f6f6fe;
+  margin-bottom: 24px;
+}
+
+input[type='number'] {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 40px;
+  width: 150px;
+  height: 40px;
+  outline: none;
+}
+
+.create-btn {
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+}
+
+.destroy-btn {
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  border: none;
+}
+
+.destroy-btn:focus,
+.destroy-btn:hover {
+  background: #ff7070;
+}
+
+.new-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 32px;
+  min-height: 134px;
+  background: #f6f6fe;
 }
